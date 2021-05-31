@@ -7,18 +7,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.head {
+  background-color: #f6f9f9;
+  padding: 31px 10px;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
-    .head {
-      background-color: white;
-      margin-top: 31px;
-      margin-bottom: 31px;
-    }
     .head__logo {
+      display: flex;
+      align-items: center;
       color:#2d3950;
       font-size: 30px;
-      margin: 31px 0;
+      margin: 31px 10px;
+      .head__img {
+        margin-right: 24px;
+      }
     }
 }
 
@@ -62,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
           margin-bottom: 137px;
         }
         .arrow-down {
-          margin-bottom: 89px;
+          margin-bottom: 96px;
           color: white;
           font-size: 25px;
         }
@@ -70,7 +75,165 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.design {
+  background-color: #f6f9f9;
+  .design__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .design__title {
+      font-weight: 300;
+      font-size: 40px;
+      margin-top: 80px;
+      margin-bottom: 28px;
+    }
+    
+    .design__text {
+      line-height: 1.5em;
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 1022px;
+      color: #a7a7a7;
+      margin-bottom: 122px;
+    }
+  }
+}
 
+.design__bg {
+  background-color: white;
+}
 
+.design__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 67px;
+  .design__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 65px;
+    .design__icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(90deg, #48baff 50%, #5fc3ff 50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 65px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      .mobile {
+        color: white;
+        font-size: 45px;
+      }
+      .telegram {
+        color: white;
+        font-size: 45px;
+      }
+    }
+    .design__discription {
+      text-align: center;
+      .design__subtitle {
+        margin-bottom: 24px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .design__subtext {
+        font-size: 15px;
+        width: 100%;
+        max-width: 290px;
+        color: #999999;
+      }
+    }
+  }
+}
 
+.card {
+  background-color: #f6f9f9;
+  .card__discription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    .card__title{
+      font-size: 41px;
+      color: #2d3950;
+      margin-top: 81px;
+    }
+    .card__text{
+      font-size: 15px;
+      color: #909090;
+      margin-top: 19px;
+      margin-bottom: 81px;
+    }
+  }
+  .card__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &:last-child {
+      padding-bottom: 116px;
+    }
+    .card__item_active{
+      width: 100%;
+      max-width: 360px;
+      height: 260px;
+      margin-right: 27px;
+      margin-bottom: 30px;
+      position: relative;
+      .card-plus {
+        position: absolute;
+        top: 109px;
+        right: 198px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        padding: 16px;
+        color: transparent;
+        border-radius: 3px;
+        }
+        .card-link {
+          position: absolute;
+          top: 109px;
+          right: 133px;
+          border: 1px solid transparent;
+          font-size: 14px;
+          padding: 16px;
+          color: transparent;
+          border-radius: 3px;
+        }
+    }
+      .card__img {
+        width: 100%;
+        max-width: 360px;
+        height: 260px;
+        border-radius: 2px;
+      }
+    .card__item {
+      width: 100%;
+      max-width: 360px;
+      height: 260px;
+      margin-right: 27px;
+      margin-bottom: 30px;
+      .card__img {
+        width: 100%;
+        max-width: 360px;
+        height: 260px;
+        border-radius: 2px;
+      }
+    }
+  } 
+}
 
+.card__item_active:hover {
+  background-color: #2cadfa;
+}
+
+.card__item_active:hover .card__img {
+  background-color: #2cadfa;
+  opacity: 0.2;
+}
+.card__item_active:hover .card-link { 
+      border: 1px solid white; 
+      color: white;     
+}
